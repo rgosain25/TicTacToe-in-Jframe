@@ -1,0 +1,32 @@
+Step by step procedure and explanation of implementing JDBC in eclipse helios.
+
+1. class.forname==driver mention karte hai..(To mention the driver) 
+2. connection establish karte hia...url pass karte hai database(Making an object of the connection class)
+3. statement create karte hai (Creating an object of statement class to convert to sql queries)
+4. task perform karte hai...(Perfom the SQL query)
+
+1. Where to find the class.forname information
+buildpath-> get external jar->mysql.jar--> to load the driver in class.forname
+
+What is forname=?
+forname
+object used to implement outside java
+remotely access database.
+
+Connection Class=?
+connection con---connection with database...
+
+Statement Class=?
+statement st=con.createStatement();---converts to sql language
+
+
+Driver -name find out::
+
+Details in Eclipse Helios.
+windows-open prospective-others-database development-data source explorer
+com.mysql.jdbc.Driver
+jdbc:mysql://localhost:3306/database
+
+Driver class- com.mysql.jdbc.Driver
+Connection URL-jdbc:mysql://localhost:3306/database
+Data base name-database
